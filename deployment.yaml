@@ -33,6 +33,6 @@ spec:
   - port: 8080
     nodePort: 31884
     protocol: TCP
-    name: http
+    name: httpd
   selector:
     app: devops-training
