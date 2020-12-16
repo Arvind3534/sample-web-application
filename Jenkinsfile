@@ -1,12 +1,9 @@
 pipeline{
     agent any
-    tools {
-        maven 'maven-builder'
-    }
     stages{
-        stage('Build'){
+        stage("Git Checkout"){
             steps{
-                 sh 'mvn clean package'
+                 git 'https://github.com/Arvind3534/sample-web-application'
             }
 	}
     }
